@@ -11,7 +11,7 @@ from pathlib import Path
 import yt_dlp
 
 PLAYLISTS_DIR = Path("playlists")
-PLAYLISTS_DIR.mkdir(exempt_ok=True)
+PLAYLISTS_DIR.mkdir(exist_ok=True)
 
 def sanitize_filename(name: str) -> str:
     """Sanitize channel/stream name for filename."""
